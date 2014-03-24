@@ -178,7 +178,7 @@ cell.dispatch {
 
 iup.dispatch(function(...)
 	local h,d,p = ...
-	print("dispatch:",c.data_unpack(d))
+	
 	local pp = port[p]
 	if pp == nil then
 		error ("Unknown port : ".. p)

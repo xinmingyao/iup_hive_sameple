@@ -96,6 +96,10 @@ function cell.main()
 				csocket.freepack(v[3])
 			end
 		end
-		cell.sleep(0)
+		if #result = 0 then
+			cell.sleep(10)
+		else
+			cell.sleep(0)
+		end
 	end
 end
